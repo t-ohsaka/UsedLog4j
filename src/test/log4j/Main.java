@@ -1,9 +1,13 @@
 package test.log4j;
 
+import org.apache.log4j.Logger;
+
 public class Main {
 
+	private static Logger log = Logger.getLogger(Main.class);
+
 	public static void main(String[] args) {
-		System.out.println("Hello Log4j!");
+		log.info("Hello Log4j!");
 
 	}
 
